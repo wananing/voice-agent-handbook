@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 608" width="100%" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a7f37"/></marker></defs>
+<rect x="0" y="0" width="1200" height="608" fill="#ffffff"/>
+<text x="32" y="56" font-size="20" font-weight="600" fill="#1f2328">手册的结构</text>
+<text x="32" y="82" font-size="14" fill="#656d76">机制页是主索引，项目页按机制作答，两层互相链接</text>
+<rect x="200" y="112" width="968" height="56" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="216" y="136" font-size="14" font-weight="600" fill="#1f2328">01 基础知识</text>
+<text x="216" y="156" font-size="12" fill="#656d76">共同词汇</text>
+<rect x="400.0" y="126.0" width="76.0" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="438.0" y="145.0" font-size="14" text-anchor="middle" fill="#1f2328">音频基础</text>
+<rect x="484.0" y="126.0" width="43.1" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="505.6" y="145.0" font-size="14" text-anchor="middle" fill="#1f2328">ASR</text>
+<rect x="535.1" y="126.0" width="43.1" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="556.6" y="145.0" font-size="14" text-anchor="middle" fill="#1f2328">TTS</text>
+<rect x="586.2" y="126.0" width="43.1" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="607.8" y="145.0" font-size="14" text-anchor="middle" fill="#1f2328">VAD</text>
+<rect x="637.3" y="126.0" width="48.0" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="661.3" y="145.0" font-size="14" text-anchor="middle" fill="#1f2328">传输</text>
+<rect x="693.3" y="126.0" width="76.0" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="731.3" y="145.0" font-size="14" text-anchor="middle" fill="#1f2328">延迟预算</text>
+<rect x="200" y="192" width="968" height="56" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="216" y="216" font-size="14" font-weight="600" fill="#1f2328">02 架构策略</text>
+<text x="216" y="236" font-size="12" fill="#656d76">该选哪条路</text>
+<rect x="400.0" y="206.0" width="48.0" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="424.0" y="225.0" font-size="14" text-anchor="middle" fill="#1f2328">级联</text>
+<rect x="456.0" y="206.0" width="62.0" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="487.0" y="225.0" font-size="14" text-anchor="middle" fill="#1f2328">半级联</text>
+<rect x="526.0" y="206.0" width="43.1" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="547.5" y="225.0" font-size="14" text-anchor="middle" fill="#1f2328">S2S</text>
+<rect x="577.1" y="206.0" width="62.0" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="608.1" y="225.0" font-size="14" text-anchor="middle" fill="#1f2328">全双工</text>
+<rect x="647.1" y="206.0" width="76.0" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="685.1" y="225.0" font-size="14" text-anchor="middle" fill="#1f2328">回合模型</text>
+<rect x="731.1" y="206.0" width="76.0" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="769.1" y="225.0" font-size="14" text-anchor="middle" fill="#1f2328">话筒归属</text>
+<rect x="815.1" y="206.0" width="104.0" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="867.1" y="225.0" font-size="14" text-anchor="middle" fill="#1f2328">状态与上下文</text>
+<rect x="200" y="272" width="968" height="56" rx="6" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+<text x="216" y="296" font-size="14" font-weight="600" fill="#0969da">03 机制</text>
+<text x="216" y="316" font-size="12" fill="#656d76">主索引</text>
+<rect x="400.0" y="286.0" width="48.0" height="28" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+<text x="424.0" y="305.0" font-size="14" text-anchor="middle" fill="#1f2328">判停</text>
+<rect x="456.0" y="286.0" width="90.0" height="28" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+<text x="501.0" y="305.0" font-size="14" text-anchor="middle" fill="#1f2328">打断与截断</text>
+<rect x="554.0" y="286.0" width="48.0" height="28" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+<text x="578.0" y="305.0" font-size="14" text-anchor="middle" fill="#1f2328">首音</text>
+<rect x="610.0" y="286.0" width="76.0" height="28" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+<text x="648.0" y="305.0" font-size="14" text-anchor="middle" fill="#1f2328">工具回合</text>
+<rect x="694.0" y="286.0" width="76.0" height="28" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+<text x="732.0" y="305.0" font-size="14" text-anchor="middle" fill="#1f2328">会话恢复</text>
+<rect x="778.0" y="286.0" width="90.0" height="28" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+<text x="823.0" y="305.0" font-size="14" text-anchor="middle" fill="#1f2328">音频前处理</text>
+<rect x="876.0" y="286.0" width="48.0" height="28" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+<text x="900.0" y="305.0" font-size="14" text-anchor="middle" fill="#1f2328">评测</text>
+<rect x="200" y="440" width="968" height="56" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="216" y="464" font-size="14" font-weight="600" fill="#1f2328">04 开源项目</text>
+<text x="216" y="484" font-size="12" fill="#656d76">按项目拆实现</text>
+<rect x="400.0" y="454.0" width="71.1" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="435.6" y="473.0" font-size="14" text-anchor="middle" fill="#1f2328">框架 ×6</text>
+<rect x="479.1" y="454.0" width="85.1" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="521.6" y="473.0" font-size="14" text-anchor="middle" fill="#1f2328">全双工 ×2</text>
+<rect x="572.2" y="454.0" width="85.1" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="614.8" y="473.0" font-size="14" text-anchor="middle" fill="#1f2328">端到端 ×3</text>
+<rect x="665.3" y="454.0" width="66.2" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="698.4" y="473.0" font-size="14" text-anchor="middle" fill="#1f2328">ASR ×4</text>
+<rect x="739.5" y="454.0" width="66.2" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="772.6" y="473.0" font-size="14" text-anchor="middle" fill="#1f2328">TTS ×6</text>
+<rect x="813.7" y="454.0" width="115.9" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="871.7" y="473.0" font-size="14" text-anchor="middle" fill="#1f2328">判停与 VAD ×2</text>
+<rect x="937.6" y="454.0" width="99.1" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="987.1" y="473.0" font-size="14" text-anchor="middle" fill="#1f2328">音频处理 ×3</text>
+<rect x="1044.7" y="454.0" width="71.1" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="1080.2" y="473.0" font-size="14" text-anchor="middle" fill="#1f2328">设备 ×2</text>
+<rect x="200" y="520" width="968" height="56" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="216" y="544" font-size="14" font-weight="600" fill="#1f2328">05 对比与选型</text>
+<text x="216" y="564" font-size="12" fill="#656d76">汇总与决策</text>
+<rect x="400.0" y="534.0" width="76.0" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="438.0" y="553.0" font-size="14" text-anchor="middle" fill="#1f2328">框架矩阵</text>
+<rect x="484.0" y="534.0" width="76.0" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="522.0" y="553.0" font-size="14" text-anchor="middle" fill="#1f2328">模型矩阵</text>
+<rect x="568.0" y="534.0" width="76.0" height="28" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="606.0" y="553.0" font-size="14" text-anchor="middle" fill="#1f2328">选型决策</text>
+<line x1="424.0" y1="328" x2="871.7" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<line x1="424.0" y1="328" x2="435.6" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<line x1="501.0" y1="328" x2="435.6" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<line x1="501.0" y1="328" x2="614.8" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<line x1="578.0" y1="328" x2="772.6" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<line x1="578.0" y1="328" x2="521.6" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<line x1="648.0" y1="328" x2="435.6" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<line x1="648.0" y1="328" x2="614.8" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<line x1="732.0" y1="328" x2="987.1" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<line x1="732.0" y1="328" x2="521.6" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<line x1="823.0" y1="328" x2="1080.2" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<line x1="823.0" y1="328" x2="987.1" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<line x1="900.0" y1="328" x2="698.4" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<line x1="900.0" y1="328" x2="435.6" y2="440" stroke="#0969da" stroke-width="1" stroke-opacity="0.7"/>
+<circle cx="424.0" cy="328" r="2.5" fill="#0969da"/>
+<circle cx="501.0" cy="328" r="2.5" fill="#0969da"/>
+<circle cx="578.0" cy="328" r="2.5" fill="#0969da"/>
+<circle cx="648.0" cy="328" r="2.5" fill="#0969da"/>
+<circle cx="732.0" cy="328" r="2.5" fill="#0969da"/>
+<circle cx="823.0" cy="328" r="2.5" fill="#0969da"/>
+<circle cx="900.0" cy="328" r="2.5" fill="#0969da"/>
+<circle cx="435.6" cy="440" r="2.5" fill="#0969da"/>
+<circle cx="521.6" cy="440" r="2.5" fill="#0969da"/>
+<circle cx="614.8" cy="440" r="2.5" fill="#0969da"/>
+<circle cx="698.4" cy="440" r="2.5" fill="#0969da"/>
+<circle cx="772.6" cy="440" r="2.5" fill="#0969da"/>
+<circle cx="871.7" cy="440" r="2.5" fill="#0969da"/>
+<circle cx="987.1" cy="440" r="2.5" fill="#0969da"/>
+<circle cx="1080.2" cy="440" r="2.5" fill="#0969da"/>
+<text x="216" y="378.0" font-size="12" fill="#0969da">机制页 → 各项目怎么做（表）</text>
+<text x="216" y="398.0" font-size="12" fill="#0969da">项目页 → 对各机制的回答（7 条）</text>
+<rect x="32" y="276.0" width="136" height="48" rx="6" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="46" y="297.0" font-size="14" font-weight="600" fill="#1f2328">带着问题来</text>
+<text x="46" y="315.0" font-size="12" fill="#1a7f37">→ 机制页</text>
+<line x1="168" y1="300.0" x2="198" y2="300.0" stroke="#1a7f37" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="32" y="444.0" width="136" height="48" rx="6" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="46" y="465.0" font-size="14" font-weight="600" fill="#1f2328">带着项目来</text>
+<text x="46" y="483.0" font-size="12" fill="#1a7f37">→ 项目页</text>
+<line x1="168" y1="468.0" x2="198" y2="468.0" stroke="#1a7f37" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="32" y="524.0" width="136" height="48" rx="6" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="46" y="545.0" font-size="14" font-weight="600" fill="#1f2328">要选型</text>
+<text x="46" y="563.0" font-size="12" fill="#1a7f37">→ 决策页</text>
+<line x1="168" y1="548.0" x2="198" y2="548.0" stroke="#1a7f37" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="32" y="260" font-size="12" fill="#656d76">读者入口</text>
+</svg>

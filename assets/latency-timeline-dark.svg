@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 556" width="100%" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif">
+<rect x="0" y="0" width="1200" height="556" fill="#0d1117"/>
+<text x="32.0" y="52.0" font-size="20" fill="#e6edf3" text-anchor="start" font-weight="600">一轮对话的时间都花在哪</text>
+<text x="32.0" y="80.0" font-size="14" fill="#8b949e" text-anchor="start">从用户停止说话到听到第一个有内容的字，三种链路的典型分解</text>
+<rect x="756.8" y="42" width="14" height="12" rx="3" fill="#122d4d" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="776.8" y="53.0" font-size="12" fill="#e6edf3" text-anchor="start">听（判停、ASR）</text>
+<rect x="884.6" y="42" width="14" height="12" rx="3" fill="#2d1b4e" stroke="#a371f7" stroke-width="1.5"/>
+<text x="904.6" y="53.0" font-size="12" fill="#e6edf3" text-anchor="start">想（LLM / 模型）</text>
+<rect x="1020.2" y="42" width="14" height="12" rx="3" fill="#12361f" stroke="#3fb950" stroke-width="1.5"/>
+<text x="1040.2" y="53.0" font-size="12" fill="#e6edf3" text-anchor="start">说（TTS、下行、播放）</text>
+<rect x="792.2" y="70" width="14" height="12" rx="3" fill="#161b22" stroke="#8b949e" stroke-width="1.5"/>
+<text x="812.2" y="81.0" font-size="12" fill="#e6edf3" text-anchor="start">实测样本</text>
+<rect x="876.2" y="70" width="14" height="12" rx="3" fill="#161b22" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="896.2" y="81.0" font-size="12" fill="#e6edf3" text-anchor="start">推算 / 待确认</text>
+<line x1="999.0" y1="68" x2="999.0" y2="84" stroke="#e6edf3" stroke-width="2"/>
+<text x="1012.0" y="81.0" font-size="12" fill="#e6edf3" text-anchor="start">有内容首音</text>
+<line x1="1095.0" y1="68" x2="1095.0" y2="84" stroke="#8b949e" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="1108.0" y="81.0" font-size="12" fill="#e6edf3" text-anchor="start">有声音首音</text>
+<line x1="200.0" y1="104" x2="200.0" y2="440" stroke="#30363d" stroke-width="1"/>
+<line x1="390.0" y1="104" x2="390.0" y2="440" stroke="#30363d" stroke-width="1"/>
+<line x1="580.0" y1="104" x2="580.0" y2="440" stroke="#30363d" stroke-width="1"/>
+<line x1="770.0" y1="104" x2="770.0" y2="440" stroke="#30363d" stroke-width="1"/>
+<line x1="960.0" y1="104" x2="960.0" y2="440" stroke="#30363d" stroke-width="1"/>
+<line x1="1150.0" y1="104" x2="1150.0" y2="440" stroke="#30363d" stroke-width="1"/>
+<text x="32.0" y="134.0" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">级联</text>
+<text x="32.0" y="152.0" font-size="12" fill="#8b949e" text-anchor="start">ASR → LLM → TTS</text>
+<rect x="201.0" y="112" width="138.6" height="50" rx="6" fill="#122d4d" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="270.3" y="133.0" font-size="14" fill="#e6edf3" text-anchor="middle">ASR 定稿</text>
+<text x="270.3" y="151.0" font-size="12" fill="#8b949e" text-anchor="middle">≈0.37 s 实测</text>
+<rect x="341.6" y="112" width="207.0" height="50" rx="6" fill="#2d1b4e" stroke="#a371f7" stroke-width="1.5"/>
+<text x="445.1" y="133.0" font-size="14" fill="#e6edf3" text-anchor="middle">LLM 首 token + 攒首段</text>
+<text x="445.1" y="151.0" font-size="12" fill="#8b949e" text-anchor="middle">≈0.5 s 实测 + 待确认</text>
+<rect x="550.6" y="112" width="100.6" height="50" rx="6" fill="#12361f" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="600.9" y="133.0" font-size="14" fill="#e6edf3" text-anchor="middle">TTS 首包</text>
+<text x="600.9" y="151.0" font-size="12" fill="#8b949e" text-anchor="middle">≤0.4 s 目标</text>
+<rect x="653.2" y="112" width="77.8" height="50" rx="6" fill="#12361f" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="692.1" y="133.0" font-size="14" fill="#e6edf3" text-anchor="middle">下行+播放</text>
+<text x="692.1" y="151.0" font-size="12" fill="#8b949e" text-anchor="middle">待确认</text>
+<line x1="732.0" y1="106" x2="732.0" y2="168" stroke="#e6edf3" stroke-width="2"/>
+<text x="742.0" y="134.0" font-size="12" fill="#e6edf3" text-anchor="start" stroke="#0d1117" stroke-width="5" stroke-linejoin="round" paint-order="stroke">有内容 1.4 s · P50 实测</text>
+<text x="742.0" y="152.0" font-size="12" fill="#8b949e" text-anchor="start" stroke="#0d1117" stroke-width="5" stroke-linejoin="round" paint-order="stroke">工具回合同为 1.4 s（正文投机生成）</text>
+<text x="32.0" y="216.0" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">半级联</text>
+<text x="32.0" y="234.0" font-size="12" fill="#8b949e" text-anchor="start">音频 LLM → TTS</text>
+<rect x="201.0" y="194" width="226.0" height="50" rx="6" fill="#2d1b4e" stroke="#a371f7" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="314.0" y="215.0" font-size="14" fill="#e6edf3" text-anchor="middle">音频 LLM 首 token + 攒首段</text>
+<text x="314.0" y="233.0" font-size="12" fill="#8b949e" text-anchor="middle">参考 ≈0.56 s（含工具定义）</text>
+<rect x="429.0" y="194" width="104.4" height="50" rx="6" fill="#12361f" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="481.2" y="215.0" font-size="14" fill="#e6edf3" text-anchor="middle">TTS 首包</text>
+<text x="481.2" y="233.0" font-size="12" fill="#8b949e" text-anchor="middle">≤0.4 s 目标</text>
+<rect x="535.4" y="194" width="81.6" height="50" rx="6" fill="#12361f" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="576.2" y="215.0" font-size="14" fill="#e6edf3" text-anchor="middle">下行+播放</text>
+<text x="576.2" y="233.0" font-size="12" fill="#8b949e" text-anchor="middle">待确认</text>
+<line x1="618.0" y1="188" x2="618.0" y2="250" stroke="#e6edf3" stroke-width="2"/>
+<text x="628.0" y="216.0" font-size="12" fill="#e6edf3" text-anchor="start" stroke="#0d1117" stroke-width="5" stroke-linejoin="round" paint-order="stroke">目标 P50 ≤1.1 s</text>
+<text x="628.0" y="234.0" font-size="12" fill="#8b949e" text-anchor="start" stroke="#0d1117" stroke-width="5" stroke-linejoin="round" paint-order="stroke">无实测</text>
+<text x="32.0" y="298.0" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">S2S（半双工）</text>
+<text x="32.0" y="316.0" font-size="12" fill="#8b949e" text-anchor="start">普通回合</text>
+<rect x="201.0" y="276" width="138.6" height="50" rx="6" fill="#122d4d" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="270.3" y="297.0" font-size="14" fill="#e6edf3" text-anchor="middle">上游判停+识别</text>
+<text x="270.3" y="315.0" font-size="12" fill="#8b949e" text-anchor="middle">≈0.37 s 待确认</text>
+<rect x="341.6" y="276" width="123.4" height="50" rx="6" fill="#2d1b4e" stroke="#a371f7" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="403.3" y="297.0" font-size="14" fill="#e6edf3" text-anchor="middle">模型首个音频块</text>
+<text x="403.3" y="315.0" font-size="12" fill="#8b949e" text-anchor="middle">分段未实测</text>
+<rect x="467.0" y="276" width="81.6" height="50" rx="6" fill="#12361f" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="507.8" y="297.0" font-size="14" fill="#e6edf3" text-anchor="middle">下行+播放</text>
+<text x="507.8" y="315.0" font-size="12" fill="#8b949e" text-anchor="middle">分段未实测</text>
+<line x1="549.6" y1="270" x2="549.6" y2="332" stroke="#e6edf3" stroke-width="2"/>
+<text x="559.6" y="306.0" font-size="12" fill="#e6edf3" text-anchor="start" stroke="#0d1117" stroke-width="5" stroke-linejoin="round" paint-order="stroke">有内容 0.87–0.96 s · 实测</text>
+<text x="32.0" y="380.0" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">S2S（半双工）</text>
+<text x="32.0" y="398.0" font-size="12" fill="#8b949e" text-anchor="start">工具回合</text>
+<rect x="201.0" y="358" width="138.6" height="50" rx="6" fill="#122d4d" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="270.3" y="379.0" font-size="14" fill="#e6edf3" text-anchor="middle">提交 → 识别完成</text>
+<text x="270.3" y="397.0" font-size="12" fill="#8b949e" text-anchor="middle">≈0.37 s 实测</text>
+<rect x="341.6" y="358" width="161.4" height="50" rx="6" fill="#2d1b4e" stroke="#a371f7" stroke-width="1.5"/>
+<text x="422.3" y="379.0" font-size="14" fill="#e6edf3" text-anchor="middle">模型决定调工具</text>
+<text x="422.3" y="397.0" font-size="12" fill="#8b949e" text-anchor="middle">累计 ≈0.8 s（实测）</text>
+<rect x="504.0" y="358" width="19.0" height="50" rx="3" fill="#161b22" stroke="#8b949e" stroke-width="1.5"/>
+<text x="513.5" y="424.0" font-size="12" fill="#8b949e" text-anchor="middle" stroke="#0d1117" stroke-width="5" stroke-linejoin="round" paint-order="stroke">工具执行 +1–50 ms</text>
+<rect x="524.0" y="358" width="473.0" height="50" rx="6" fill="#2d1b4e" stroke="#a371f7" stroke-width="1.5"/>
+<text x="760.5" y="379.0" font-size="14" fill="#e6edf3" text-anchor="middle">结果回传 → 模型再生成并合成</text>
+<text x="760.5" y="397.0" font-size="12" fill="#8b949e" text-anchor="middle">≈1.2 s（实测），占大头</text>
+<line x1="998.0" y1="352" x2="998.0" y2="414" stroke="#e6edf3" stroke-width="2"/>
+<text x="1008.0" y="380.0" font-size="12" fill="#e6edf3" text-anchor="start" stroke="#0d1117" stroke-width="5" stroke-linejoin="round" paint-order="stroke">有内容 ≈2.1 s · 实测</text>
+<text x="1008.0" y="398.0" font-size="12" fill="#8b949e" text-anchor="start" stroke="#0d1117" stroke-width="5" stroke-linejoin="round" paint-order="stroke">慢在结果回传后再生成</text>
+<path d="M530.6,268 V264 H564.8 V268" fill="none" stroke="#e6edf3" stroke-width="1.5"/>
+<line x1="530.6" y1="352" x2="530.6" y2="414" stroke="#8b949e" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="536.6" y="349.0" font-size="12" fill="#8b949e" text-anchor="start" stroke="#0d1117" stroke-width="5" stroke-linejoin="round" paint-order="stroke">有声音 ≈0.87 s：function call 时本地播预合成提示语</text>
+<line x1="200" y1="440" x2="1150.0" y2="440" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="200.0" y1="440" x2="200.0" y2="446" stroke="#8b949e" stroke-width="1.5"/>
+<text x="200.0" y="460.0" font-size="12" fill="#8b949e" text-anchor="start">0 松键</text>
+<line x1="238.0" y1="440" x2="238.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="276.0" y1="440" x2="276.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="314.0" y1="440" x2="314.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="352.0" y1="440" x2="352.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="390.0" y1="440" x2="390.0" y2="446" stroke="#8b949e" stroke-width="1.5"/>
+<text x="390.0" y="460.0" font-size="12" fill="#8b949e" text-anchor="middle">0.5 s</text>
+<line x1="428.0" y1="440" x2="428.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="466.0" y1="440" x2="466.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="504.0" y1="440" x2="504.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="542.0" y1="440" x2="542.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="580.0" y1="440" x2="580.0" y2="446" stroke="#8b949e" stroke-width="1.5"/>
+<text x="580.0" y="460.0" font-size="12" fill="#8b949e" text-anchor="middle">1.0 s</text>
+<line x1="618.0" y1="440" x2="618.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="656.0" y1="440" x2="656.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="694.0" y1="440" x2="694.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="732.0" y1="440" x2="732.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="770.0" y1="440" x2="770.0" y2="446" stroke="#8b949e" stroke-width="1.5"/>
+<text x="770.0" y="460.0" font-size="12" fill="#8b949e" text-anchor="middle">1.5 s</text>
+<line x1="808.0" y1="440" x2="808.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="846.0" y1="440" x2="846.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="884.0" y1="440" x2="884.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="922.0" y1="440" x2="922.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="960.0" y1="440" x2="960.0" y2="446" stroke="#8b949e" stroke-width="1.5"/>
+<text x="960.0" y="460.0" font-size="12" fill="#8b949e" text-anchor="middle">2.0 s</text>
+<line x1="998.0" y1="440" x2="998.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="1036.0" y1="440" x2="1036.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="1074.0" y1="440" x2="1074.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="1112.0" y1="440" x2="1112.0" y2="443" stroke="#8b949e" stroke-width="1.5"/>
+<line x1="1150.0" y1="440" x2="1150.0" y2="446" stroke="#8b949e" stroke-width="1.5"/>
+<text x="1150.0" y="460.0" font-size="12" fill="#8b949e" text-anchor="middle">2.5 s</text>
+<text x="32.0" y="460.0" font-size="12" fill="#8b949e" text-anchor="start">时间</text>
+<text x="32.0" y="490.0" font-size="12" fill="#8b949e" text-anchor="start">口径：从松键起算（按键说话，判停≈0）；实测数字来自一份实践笔记（儿童伴游玩偶项目，中文，上行 Opus），样本量小，只代表那套环境。</text>
+<text x="32.0" y="508.0" font-size="12" fill="#8b949e" text-anchor="start">级联、S2S 普通回合只实测了总时长，分段宽度按量级示意；半级联无实测，按目标 ≤1.1 s 画。开放麦克风下还要另加几百 ms 到数秒的判停。</text>
+<text x="32.0" y="526.0" font-size="12" fill="#8b949e" text-anchor="start">S2S 样本是全双工 S2S 模型 + 原生 function call，在按键设备上半双工使用。</text>
+</svg>

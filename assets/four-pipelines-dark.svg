@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" width="100%" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif">
+<defs>
+<marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8b949e"/></marker>
+<marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#58a6ff"/></marker>
+</defs>
+<rect x="0" y="0" width="1200" height="580" fill="#0d1117"/>
+<text x="32" y="52" font-size="20" font-weight="600" fill="#e6edf3">四种链路形态</text>
+<text x="32" y="80" font-size="14" fill="#8b949e">看两件事：文本在哪一步出现，判停由谁做</text>
+<rect x="32" y="104" width="272" height="444" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="48" y="132" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">级联</text>
+<text x="128" y="166" font-size="14" fill="#8b949e" text-anchor="middle">用户音频</text>
+<text x="128" y="372" font-size="14" fill="#8b949e" text-anchor="middle">agent 音频</text>
+<rect x="56" y="192" width="144" height="32" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="128" y="213" font-size="14" fill="#e6edf3" text-anchor="middle">ASR</text>
+<rect x="56" y="248" width="144" height="32" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="128" y="269" font-size="14" fill="#e6edf3" text-anchor="middle">LLM</text>
+<rect x="56" y="304" width="144" height="32" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="128" y="325" font-size="14" fill="#e6edf3" text-anchor="middle">TTS</text>
+<line x1="128" y1="172" x2="128" y2="190" stroke="#8b949e" stroke-width="1.5" marker-end="url(#ag)"/>
+<line x1="128" y1="224" x2="128" y2="246" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#ab)"/>
+<text x="138" y="240" font-size="12" fill="#58a6ff" text-anchor="start">文本</text>
+<line x1="128" y1="280" x2="128" y2="302" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#ab)"/>
+<text x="138" y="296" font-size="12" fill="#58a6ff" text-anchor="start">文本</text>
+<line x1="128" y1="336" x2="128" y2="354" stroke="#8b949e" stroke-width="1.5" marker-end="url(#ag)"/>
+<line x1="48" y1="392" x2="288" y2="392" stroke="#30363d" stroke-width="1.5"/>
+<text x="48" y="416" font-size="12" fill="#8b949e" text-anchor="start">文本出现</text>
+<text x="108" y="416" font-size="14" fill="#e6edf3" text-anchor="start">ASR 之后，段间都是文本</text>
+<text x="108" y="435" font-size="12" fill="#8b949e" text-anchor="start">出声前可审核、逐字念</text>
+<text x="48" y="462" font-size="12" fill="#8b949e" text-anchor="start">判停</text>
+<text x="108" y="462" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">自己</text>
+<text x="108" y="481" font-size="12" fill="#8b949e" text-anchor="start">VAD + 语义判停</text>
+<line x1="48" y1="496" x2="288" y2="496" stroke="#30363d" stroke-width="1.5"/>
+<text x="48" y="516" font-size="12" fill="#8b949e" text-anchor="start">代表</text>
+<text x="288" y="516" font-size="12" fill="#e6edf3" text-anchor="end">pipecat · livekit-agents</text>
+<text x="288" y="533" font-size="12" fill="#e6edf3" text-anchor="end">xiaozhi</text>
+<rect x="320" y="104" width="272" height="444" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="336" y="132" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">半级联</text>
+<text x="416" y="166" font-size="14" fill="#8b949e" text-anchor="middle">用户音频</text>
+<text x="416" y="372" font-size="14" fill="#8b949e" text-anchor="middle">agent 音频</text>
+<rect x="344" y="192" width="144" height="50" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="416" y="214" font-size="14" fill="#e6edf3" text-anchor="middle">音频理解模型</text>
+<text x="416" y="232" font-size="12" fill="#8b949e" text-anchor="middle">只出文本</text>
+<line x1="416" y1="172" x2="416" y2="190" stroke="#8b949e" stroke-width="1.5" marker-end="url(#ag)"/>
+<line x1="416" y1="242" x2="416" y2="302" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#ab)"/>
+<text x="426" y="276" font-size="12" fill="#58a6ff" text-anchor="start">文本</text>
+<rect x="344" y="304" width="144" height="32" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="416" y="325" font-size="14" fill="#e6edf3" text-anchor="middle">自己的 TTS</text>
+<line x1="416" y1="336" x2="416" y2="354" stroke="#8b949e" stroke-width="1.5" marker-end="url(#ag)"/>
+<line x1="336" y1="392" x2="576" y2="392" stroke="#30363d" stroke-width="1.5"/>
+<text x="336" y="416" font-size="12" fill="#8b949e" text-anchor="start">文本出现</text>
+<text x="396" y="416" font-size="14" fill="#e6edf3" text-anchor="start">理解模型直接出文本</text>
+<text x="396" y="435" font-size="12" fill="#8b949e" text-anchor="start">先于任何声音，声音统一</text>
+<text x="336" y="462" font-size="12" fill="#8b949e" text-anchor="start">判停</text>
+<text x="396" y="462" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">自己</text>
+<text x="396" y="481" font-size="12" fill="#8b949e" text-anchor="start">判停完全自控，同级联</text>
+<line x1="336" y1="496" x2="576" y2="496" stroke="#30363d" stroke-width="1.5"/>
+<text x="336" y="516" font-size="12" fill="#8b949e" text-anchor="start">代表</text>
+<text x="576" y="516" font-size="12" fill="#e6edf3" text-anchor="end">livekit-agents · pipecat</text>
+<text x="576" y="533" font-size="12" fill="#e6edf3" text-anchor="end">ultravox</text>
+<rect x="608" y="104" width="272" height="444" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="624" y="132" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">端到端 S2S</text>
+<text x="704" y="166" font-size="14" fill="#8b949e" text-anchor="middle">用户音频</text>
+<text x="704" y="372" font-size="14" fill="#8b949e" text-anchor="middle">agent 音频</text>
+<rect x="632" y="210" width="144" height="92" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="704" y="236" font-size="14" fill="#e6edf3" text-anchor="middle">实时模型</text>
+<text x="704" y="256" font-size="12" fill="#8b949e" text-anchor="middle">音频进、音频出</text>
+<line x1="644" y1="282" x2="656" y2="282" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+<text x="662" y="286" font-size="12" fill="#58a6ff" text-anchor="start">文本只早几十毫秒</text>
+<line x1="704" y1="172" x2="704" y2="208" stroke="#8b949e" stroke-width="1.5" marker-end="url(#ag)"/>
+<line x1="704" y1="302" x2="704" y2="354" stroke="#8b949e" stroke-width="1.5" marker-end="url(#ag)"/>
+<rect x="804" y="238" width="62" height="36" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="835" y="261" font-size="12" fill="#e6edf3" text-anchor="middle">工具调用</text>
+<line x1="778" y1="256" x2="802" y2="256" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="4 3" marker-start="url(#ag)" marker-end="url(#ag)"/>
+<line x1="624" y1="392" x2="864" y2="392" stroke="#30363d" stroke-width="1.5"/>
+<text x="624" y="416" font-size="12" fill="#8b949e" text-anchor="start">文本出现</text>
+<text x="684" y="416" font-size="14" fill="#e6edf3" text-anchor="start">只比音频早几十毫秒</text>
+<text x="684" y="435" font-size="12" fill="#8b949e" text-anchor="start">出声前没有完整文本</text>
+<text x="624" y="462" font-size="12" fill="#8b949e" text-anchor="start">判停</text>
+<text x="684" y="462" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">上游</text>
+<text x="684" y="481" font-size="12" fill="#8b949e" text-anchor="start">服务端 VAD，常关不掉</text>
+<line x1="624" y1="496" x2="864" y2="496" stroke="#30363d" stroke-width="1.5"/>
+<text x="624" y="516" font-size="12" fill="#8b949e" text-anchor="start">代表</text>
+<text x="864" y="516" font-size="12" fill="#e6edf3" text-anchor="end">OpenAI Realtime · Gemini Live</text>
+<text x="864" y="533" font-size="12" fill="#e6edf3" text-anchor="end">Qwen3-Omni / Step-Audio2 云端版</text>
+<rect x="896" y="104" width="272" height="444" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="912" y="132" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">全双工</text>
+<text x="992" y="166" font-size="14" fill="#8b949e" text-anchor="middle">用户</text>
+<line x1="970" y1="172" x2="970" y2="206" stroke="#8b949e" stroke-width="1.5" marker-end="url(#ag)"/>
+<line x1="1014" y1="206" x2="1014" y2="172" stroke="#8b949e" stroke-width="1.5" marker-end="url(#ag)"/>
+<text x="962" y="194" font-size="12" fill="#8b949e" text-anchor="end">听</text>
+<text x="1022" y="194" font-size="12" fill="#8b949e" text-anchor="start">说</text>
+<text x="1082" y="194" font-size="12" fill="#8b949e" text-anchor="start">同时进行</text>
+<rect x="920" y="208" width="144" height="80" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="992" y="232" font-size="14" fill="#e6edf3" text-anchor="middle">原生全双工模型</text>
+<text x="992" y="251" font-size="12" fill="#8b949e" text-anchor="middle">每 80 ms 决定说不说</text>
+<line x1="930" y1="271" x2="942" y2="271" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+<text x="948" y="275" font-size="12" fill="#58a6ff" text-anchor="start">独白文本早 80 ms</text>
+<rect x="912" y="304" width="240" height="72" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="924" y="326" font-size="12" fill="#e6edf3" text-anchor="start" font-weight="600">组装式（unmute）</text>
+<text x="924" y="346" font-size="12" fill="#8b949e" text-anchor="start">链路是级联，说话时也在听、可打断</text>
+<text x="924" y="364" font-size="12" fill="#8b949e" text-anchor="start">仍是轮流说话，不会附和</text>
+<line x1="912" y1="392" x2="1152" y2="392" stroke="#30363d" stroke-width="1.5"/>
+<text x="912" y="416" font-size="12" fill="#8b949e" text-anchor="start">文本出现</text>
+<text x="972" y="416" font-size="14" fill="#e6edf3" text-anchor="start">原生：只比声音早 80 ms</text>
+<text x="972" y="435" font-size="12" fill="#8b949e" text-anchor="start">组装式：同底层链路</text>
+<text x="912" y="462" font-size="12" fill="#8b949e" text-anchor="start">判停</text>
+<text x="972" y="462" font-size="14" fill="#e6edf3" text-anchor="start" font-weight="600">原生：模型内部</text>
+<text x="972" y="481" font-size="12" fill="#8b949e" text-anchor="start">组装式：自己（同底层链路）</text>
+<line x1="912" y1="496" x2="1152" y2="496" stroke="#30363d" stroke-width="1.5"/>
+<text x="912" y="516" font-size="12" fill="#8b949e" text-anchor="start">代表</text>
+<text x="1152" y="516" font-size="12" fill="#e6edf3" text-anchor="end">moshi</text>
+<text x="1152" y="533" font-size="12" fill="#e6edf3" text-anchor="end">unmute（组装式）</text>
+</svg>

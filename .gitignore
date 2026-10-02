@@ -1,0 +1,9 @@
+# 编辑器与系统文件
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# 本地渲染产物
+*.png

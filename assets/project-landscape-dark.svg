@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 654" width="100%" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8b949e"/></marker></defs>
+<rect x="0" y="0" width="1200" height="654" fill="#0d1117"/>
+<text x="32" y="52" font-size="20" font-weight="600" fill="#e6edf3">手册覆盖的 28 个开源项目</text>
+<text x="32" y="78" font-size="14" fill="#8b949e">按它们在语音链路里的位置摆放</text>
+<rect x="32" y="102" width="1136" height="96" rx="6" fill="#122d4d" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="48" y="128" font-size="14" font-weight="600" fill="#58a6ff">编排框架</text>
+<text x="120" y="128" font-size="12" fill="#8b949e">框架把下面的组件串起来，unmute 和 xiaozhi-esp32-server 是完整系统</text>
+<rect x="48.0" y="144" width="73.9" height="36" rx="6" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="85.0" y="167" font-size="14" text-anchor="middle" fill="#e6edf3">pipecat</text>
+<rect x="132.1" y="144" width="120.1" height="36" rx="6" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="192.2" y="167" font-size="14" text-anchor="middle" fill="#e6edf3">pipecat-flows</text>
+<rect x="262.4" y="144" width="127.8" height="36" rx="6" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="326.3" y="167" font-size="14" text-anchor="middle" fill="#e6edf3">livekit-agents</text>
+<rect x="400.4" y="144" width="120.1" height="36" rx="6" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="460.5" y="167" font-size="14" text-anchor="middle" fill="#e6edf3">TEN Framework</text>
+<rect x="530.8" y="144" width="189.4" height="36" rx="6" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="625.5" y="167" font-size="14" text-anchor="middle" fill="#e6edf3">openai-realtime-agents</text>
+<rect x="730.4" y="144" width="143.2" height="36" rx="6" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="802.0" y="167" font-size="14" text-anchor="middle" fill="#e6edf3">qwen-audio-agent</text>
+<line x1="887.6" y1="140" x2="887.6" y2="184" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="4 4"/>
+<rect x="901.6" y="144" width="66.2" height="36" rx="6" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="934.7" y="167" font-size="14" text-anchor="middle" fill="#e6edf3">unmute</text>
+<rect x="978.0" y="144" width="174.0" height="36" rx="6" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="1065.0" y="167" font-size="14" text-anchor="middle" fill="#e6edf3">xiaozhi-esp32-server</text>
+<rect x="32.0" y="222" width="150" height="366" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="107.0" y="248" font-size="14" font-weight="600" text-anchor="middle" fill="#8b949e">设备与传输</text>
+<rect x="44.0" y="262" width="126" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="107.0" y="281" font-size="14" text-anchor="middle" fill="#e6edf3">xiaozhi-esp32</text>
+<text x="107.0" y="298" font-size="12" text-anchor="middle" fill="#8b949e">ESP32 固件</text>
+<rect x="44.0" y="316" width="126" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="107.0" y="335" font-size="14" text-anchor="middle" fill="#e6edf3">aiortc</text>
+<text x="107.0" y="352" font-size="12" text-anchor="middle" fill="#8b949e">Python WebRTC</text>
+<rect x="195.6" y="222" width="228" height="366" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="309.6" y="248" font-size="14" font-weight="600" text-anchor="middle" fill="#8b949e">音频前处理</text>
+<rect x="207.6" y="262" width="204" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="309.6" y="281" font-size="14" text-anchor="middle" fill="#e6edf3">rnnoise</text>
+<text x="309.6" y="298" font-size="12" text-anchor="middle" fill="#8b949e">降噪</text>
+<rect x="207.6" y="316" width="204" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="309.6" y="335" font-size="14" text-anchor="middle" fill="#e6edf3">webrtc-audio-processing</text>
+<text x="309.6" y="352" font-size="12" text-anchor="middle" fill="#8b949e">AEC / NS / AGC</text>
+<rect x="437.2" y="222" width="150" height="366" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="512.2" y="248" font-size="14" font-weight="600" text-anchor="middle" fill="#8b949e">VAD 与判停</text>
+<rect x="449.2" y="262" width="126" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="512.2" y="281" font-size="14" text-anchor="middle" fill="#e6edf3">ten-vad</text>
+<text x="512.2" y="298" font-size="12" text-anchor="middle" fill="#8b949e">帧级 VAD</text>
+<rect x="449.2" y="316" width="126" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="512.2" y="335" font-size="14" text-anchor="middle" fill="#e6edf3">smart-turn</text>
+<text x="512.2" y="352" font-size="12" text-anchor="middle" fill="#8b949e">语义判停</text>
+<rect x="600.8" y="222" width="180" height="366" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="690.8" y="248" font-size="14" font-weight="600" text-anchor="middle" fill="#8b949e">ASR</text>
+<rect x="612.8" y="262" width="156" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="690.8" y="281" font-size="14" text-anchor="middle" fill="#e6edf3">FunASR</text>
+<text x="690.8" y="298" font-size="12" text-anchor="middle" fill="#8b949e">流式 2pass</text>
+<rect x="612.8" y="316" width="156" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="690.8" y="335" font-size="14" text-anchor="middle" fill="#e6edf3">SenseVoice</text>
+<text x="690.8" y="352" font-size="12" text-anchor="middle" fill="#8b949e">整句</text>
+<rect x="612.8" y="370" width="156" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="690.8" y="389" font-size="14" text-anchor="middle" fill="#e6edf3">FireRedASR</text>
+<text x="690.8" y="406" font-size="12" text-anchor="middle" fill="#8b949e">整句</text>
+<rect x="612.8" y="424" width="156" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="690.8" y="443" font-size="14" text-anchor="middle" fill="#e6edf3">sherpa-onnx</text>
+<text x="690.8" y="460" font-size="12" text-anchor="middle" fill="#8b949e">运行时 · 流式 / 整句</text>
+<rect x="794.4" y="222" width="180" height="366" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="884.4" y="248" font-size="14" font-weight="600" text-anchor="middle" fill="#8b949e">理解与生成</text>
+<rect x="806.4" y="262" width="156" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="884.4" y="281" font-size="14" text-anchor="middle" fill="#e6edf3">Qwen3-Omni</text>
+<text x="884.4" y="298" font-size="12" text-anchor="middle" fill="#8b949e">出文本和语音</text>
+<rect x="806.4" y="316" width="156" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="884.4" y="335" font-size="14" text-anchor="middle" fill="#e6edf3">Step-Audio2</text>
+<text x="884.4" y="352" font-size="12" text-anchor="middle" fill="#8b949e">原生工具调用</text>
+<rect x="806.4" y="370" width="156" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="884.4" y="389" font-size="14" text-anchor="middle" fill="#e6edf3">Ultravox</text>
+<text x="884.4" y="406" font-size="12" text-anchor="middle" fill="#8b949e">语音进、文本出</text>
+<rect x="806.4" y="424" width="156" height="44" rx="6" fill="#0d1117" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="884.4" y="443" font-size="14" text-anchor="middle" fill="#e6edf3">moshi</text>
+<text x="884.4" y="460" font-size="12" text-anchor="middle" fill="#8b949e">原生全双工 · 听说一体</text>
+<rect x="988.0" y="222" width="180" height="366" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="1078.0" y="248" font-size="14" font-weight="600" text-anchor="middle" fill="#8b949e">TTS</text>
+<rect x="1000.0" y="262" width="156" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="1078.0" y="281" font-size="14" text-anchor="middle" fill="#e6edf3">CosyVoice</text>
+<text x="1078.0" y="298" font-size="12" text-anchor="middle" fill="#8b949e">文本流入</text>
+<rect x="1000.0" y="316" width="156" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="1078.0" y="335" font-size="14" text-anchor="middle" fill="#e6edf3">fish-speech</text>
+<text x="1078.0" y="352" font-size="12" text-anchor="middle" fill="#8b949e">无句内流式</text>
+<rect x="1000.0" y="370" width="156" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="1078.0" y="389" font-size="14" text-anchor="middle" fill="#e6edf3">IndexTTS</text>
+<text x="1078.0" y="406" font-size="12" text-anchor="middle" fill="#8b949e">整段输出</text>
+<rect x="1000.0" y="424" width="156" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="1078.0" y="443" font-size="14" text-anchor="middle" fill="#e6edf3">Spark-TTS</text>
+<text x="1078.0" y="460" font-size="12" text-anchor="middle" fill="#8b949e">流式仅 Triton 路径</text>
+<rect x="1000.0" y="478" width="156" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="1078.0" y="497" font-size="14" text-anchor="middle" fill="#e6edf3">FireRedTTS2</text>
+<text x="1078.0" y="514" font-size="12" text-anchor="middle" fill="#8b949e">逐帧流式</text>
+<rect x="1000.0" y="532" width="156" height="44" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+<text x="1078.0" y="551" font-size="14" text-anchor="middle" fill="#e6edf3">VoxCPM</text>
+<text x="1078.0" y="568" font-size="12" text-anchor="middle" fill="#8b949e">48 kHz</text>
+<text x="32" y="618" font-size="12" fill="#8b949e">链路方向</text>
+<line x1="92" y1="614" x2="1166" y2="614" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
+</svg>
