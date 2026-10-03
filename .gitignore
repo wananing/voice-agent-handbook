@@ -7,3 +7,6 @@ Thumbs.db
 
 # 本地渲染产物
 *.png
+
+# skill 评测工作区
+skills/*-workspace/

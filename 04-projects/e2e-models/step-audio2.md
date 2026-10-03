@@ -1,6 +1,7 @@
 # Step-Audio2
 
 > 仓库：https://github.com/stepfun-ai/Step-Audio2
+> 许可：代码 Apache-2.0（见仓库 LICENSE 文件）；权重 Apache-2.0
 > 分析基于：commit 76e272b
 > 状态：草稿
 > 最后更新：2026-10-01

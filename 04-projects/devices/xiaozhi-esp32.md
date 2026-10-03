@@ -1,6 +1,7 @@
 # xiaozhi-esp32
 
 > 仓库：https://github.com/78/xiaozhi-esp32
+> 许可：MIT（见仓库 LICENSE 文件）
 > 分析基于：commit `8ce50d2`（2026-09-26）
 > 状态：草稿
 > 最后更新：2026-10-02
