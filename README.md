@@ -119,7 +119,14 @@
 
 `skills/voice-agent-handbook/` 是一个 Claude Code skill，把手册的判断变成三种可执行的流程：设计顾问（按 8 个问题问诊、走决策树、给方案）、代码评审（按七个机制逐项核对现成代码）、搭建助手（按设备协议、输出仲裁、工具收口、上游适配、上下文、trace 六份规范模板产出设计和代码骨架）。附两个脚本：首音预算计算器和 trace 校验器。
 
-安装：把目录复制或软链到 `~/.claude/skills/voice-agent-handbook`。之后在 Claude Code 里做语音 agent 相关的事会自动触发。
+安装有两种方式。仓库本身是一个 Claude Code plugin marketplace，在 Claude Code 里执行：
+
+```
+/plugin marketplace add wananing/voice-agent-handbook
+/plugin install voice-agent-handbook@voice-agent-handbook
+```
+
+或者把 `skills/voice-agent-handbook/` 复制或软链到 `~/.claude/skills/`。之后在 Claude Code 里做语音 agent 相关的事会自动触发。
 
 第一轮评测（三个用例，各跑一次，带 skill 对不带 skill）：断言通过率 96% 对 55%，差距最大的是搭建模式；代价是 token 和时间大约翻倍。用例和断言在 `skills/voice-agent-handbook/evals/`。
 

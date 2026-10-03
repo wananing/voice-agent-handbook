@@ -1,0 +1,12 @@
+{
+  "name": "voice-agent-handbook",
+  "description": "Voice Agent Handbook 配套的 Claude Code 插件",
+  "owner": { "name": "wananing" },
+  "plugins": [
+    {
+      "name": "voice-agent-handbook",
+      "source": "./",
+      "description": "实时语音 agent 的架构顾问、代码评审和搭建助手"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "voice-agent-handbook",
+  "displayName": "Voice Agent Handbook",
+  "version": "0.1.0",
+  "description": "实时语音 agent 的架构顾问、代码评审和搭建助手：选链路、定判停和打断、算首音预算、按规范模板产出设备协议和仲裁器骨架，基于拆过 28 个开源项目的手册。",
+  "author": { "name": "wananing" },
+  "homepage": "https://github.com/wananing/voice-agent-handbook",
+  "repository": "https://github.com/wananing/voice-agent-handbook",
+  "license": "CC-BY-4.0",
+  "keywords": ["voice-agent", "speech", "realtime", "asr", "tts", "turn-detection", "pipecat", "livekit"],
+  "skills": ["./skills/voice-agent-handbook"]
+}
